@@ -16,7 +16,7 @@ class OnboardingPage extends StatelessWidget {
           width: 1.sw,
           alignment: Alignment.center,
           decoration: BoxDecoration(
-            gradient: mainGradient(context),
+            gradient: mainGradient(),
           ),
           child: Padding(
             padding: EdgeInsets.symmetric(
@@ -45,12 +45,13 @@ class OnboardingPage extends StatelessWidget {
                   height: 30.h,
                 ),
                 CircleButton(
-                  width: 40.sp,
+                  width: 60.sp,
                   onTap: () {
-                    Get.toNamed('/home');
+                    Get.offNamed('/home');
                   },
-                  child: const Icon(
+                  child: Icon(
                     Icons.arrow_forward_ios,
+                    size: 25.sp,
                   ),
                 )
               ],
