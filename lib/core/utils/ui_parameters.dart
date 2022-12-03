@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class UiParameters {
-  static bool isDarkMode(BuildContext context) {
-    return Theme.of(context).brightness == Brightness.dark;
+  static bool isDarkMode() {
+    return Get.isDarkMode ? true : false;
   }
 }

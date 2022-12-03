@@ -15,7 +15,7 @@ class SplashPage extends StatelessWidget {
           width: 1.sw,
           alignment: Alignment.center,
           decoration: BoxDecoration(
-            gradient: mainGradient(context),
+            gradient: mainGradient(),
           ),
           child: SvgPicture.asset(
             'assets/images/app_splash_logo.svg',

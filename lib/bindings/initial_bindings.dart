@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 import 'package:quiz_learn/controllers/auth/auth_controller.dart';
 import 'package:quiz_learn/controllers/theme_controller.dart';
+import 'package:quiz_learn/services/firebase_storage_services.dart';
 
 class InitialBindings implements Bindings {
   @override
@@ -11,6 +12,9 @@ class InitialBindings implements Bindings {
     Get.put(
       AuthController(),
       permanent: true,
+    );
+    Get.put(
+      FirebaseStorageServices(),
     );
   }
 }

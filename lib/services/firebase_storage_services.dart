@@ -1,7 +1,5 @@
-import 'package:firebase_storage/firebase_storage.dart';
 import 'package:get/get.dart';
-
-Reference get firebaseStorage => FirebaseStorage.instance.ref();
+import 'package:quiz_learn/core/utils/app_constant.dart';
 
 class FirebaseStorageServices extends GetxService {
   Future<String?> getImage(String? imageName) async {
